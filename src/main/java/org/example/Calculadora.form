@@ -32,7 +32,7 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="3dd71" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+              <component id="3dd71" class="javax.swing.JTextField" binding="numero1">
                 <constraints>
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -48,7 +48,7 @@
                   <text value="Numero 1"/>
                 </properties>
               </component>
-              <component id="4ed36" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+              <component id="4ed36" class="javax.swing.JTextField" binding="numero2">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="150" height="-1"/>
@@ -100,7 +100,7 @@
                     <properties/>
                     <border type="none"/>
                     <children>
-                      <component id="a2130" class="javax.swing.JButton" binding="button1" default-binding="true">
+                      <component id="a2130" class="javax.swing.JButton" binding="sumabutton">
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
@@ -136,7 +136,7 @@
                     <properties/>
                     <border type="none"/>
                     <children>
-                      <component id="c87b6" class="javax.swing.JButton" binding="button6" default-binding="true">
+                      <component id="c87b6" class="javax.swing.JButton" binding="divibutton">
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
@@ -172,7 +172,7 @@
                         <properties/>
                         <border type="none"/>
                         <children>
-                          <component id="306a0" class="javax.swing.JButton" binding="button3" default-binding="true">
+                          <component id="306a0" class="javax.swing.JButton" binding="multibutton">
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                             </constraints>
@@ -238,7 +238,7 @@
                     <properties/>
                     <border type="none"/>
                     <children>
-                      <component id="e6045" class="javax.swing.JButton" binding="button2" default-binding="true">
+                      <component id="e6045" class="javax.swing.JButton" binding="restabutton">
                         <constraints>
                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                         </constraints>
@@ -298,7 +298,7 @@
           <text value="Resultado"/>
         </properties>
       </component>
-      <component id="891ca" class="javax.swing.JLabel">
+      <component id="891ca" class="javax.swing.JLabel" binding="Respuesta">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

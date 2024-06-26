@@ -9,10 +9,10 @@ public class Calculadora {
     private JButton button1;
     private JButton button2;
     private JButton button3;
-    private JButton button4;
     private JButton raizButton;
     private JButton potenciaButton;
-    private JButton senButton;
-    private JButton tanButton;
+    private JButton button6;
+    private JButton secButton;
     private JButton cosButton;
+    private JButton tanButton;
 }

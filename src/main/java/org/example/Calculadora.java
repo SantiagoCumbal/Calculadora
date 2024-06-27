@@ -64,7 +64,21 @@ public class Calculadora {
         raizButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                int base=Integer.parseInt(numero1.getText());
+                int indice=Integer.parseInt(numero2.getText());
+                double raiz=Math.pow(base,1.0/indice);
+                double raizR = Math.round(raiz * 100.0) / 100.0;
+                Respuesta.setText(raizR+"");
+            }
+        });
+        potenciaButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int base=Integer.parseInt(numero1.getText());
+                int exponente=Integer.parseInt(numero2.getText());
+                double potencia=Math.pow(base,exponente);
+                double potenciaR = Math.round(potencia * 100.0) / 100.0;
+                Respuesta.setText(potenciaR+"");
             }
         });
     }

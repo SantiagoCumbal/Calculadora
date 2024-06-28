@@ -24,28 +24,31 @@ public class Calculadora {
         sumabutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int numero1V=Integer.parseInt(numero1.getText());
-                int numero2V=Integer.parseInt(numero2.getText());
-                int suma=numero1V+numero2V;
-                Respuesta.setText(suma+"");
+                double numero1V=Integer.parseInt(numero1.getText());
+                double numero2V=Integer.parseInt(numero2.getText());
+                double suma=numero1V+numero2V;
+                double sumaR = Math.round(suma * 100.0) / 100.0;
+                Respuesta.setText(sumaR+"");
             }
         });
         restabutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int numero1V=Integer.parseInt(numero1.getText());
-                int numero2V=Integer.parseInt(numero2.getText());
-                int resta=numero1V-numero2V;
-                Respuesta.setText(resta+"");
+                double numero1V=Integer.parseInt(numero1.getText());
+                double numero2V=Integer.parseInt(numero2.getText());
+                double resta=numero1V-numero2V;
+                double restaR = Math.round(resta * 100.0) / 100.0;
+                Respuesta.setText(restaR+"");
             }
         });
         multibutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int numero1V=Integer.parseInt(numero1.getText());
-                int numero2V=Integer.parseInt(numero2.getText());
-                int multi=numero1V*numero2V;
-                Respuesta.setText(multi+"");
+                double numero1V=Integer.parseInt(numero1.getText());
+                double numero2V=Integer.parseInt(numero2.getText());
+                double multi=numero1V*numero2V;
+                double multiR = Math.round(multi * 100.0) / 100.0;
+                Respuesta.setText(multiR+"");
             }
         });
 
@@ -58,7 +61,8 @@ public class Calculadora {
                     Respuesta.setText("NO EXISTE DIVISION PARA 0");
                 } else{
                     double divi=numero1V/numero2V;
-                    Respuesta.setText(divi+"");
+                    double diviR = Math.round(divi * 100.0) / 100.0;
+                    Respuesta.setText(diviR+"");
                 }
             }
         });

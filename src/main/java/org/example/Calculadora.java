@@ -18,6 +18,7 @@ public class Calculadora {
     private JButton cosButton;
     private JButton tanButton;
     private JLabel Respuesta;
+    private JButton CLRButton;
 
     public Calculadora() {
         sumabutton.addActionListener(new ActionListener() {
@@ -81,5 +82,49 @@ public class Calculadora {
                 Respuesta.setText(potenciaR+"");
             }
         });
+        CLRButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                numero1.setText(null);
+                numero2.setText(null);
+                Respuesta.setText(null);
+            }
+        });
+        secButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double valor=Double.parseDouble(numero1.getText());
+                numero2.setText(" - ");
+                double valorRad=Math.toRadians(valor);
+                double sec= Math.sin(valorRad);
+                double secR= Math.round(sec*100.0)/100.0;
+                Respuesta.setText(secR+"");
+            }
+        });
+        cosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double valor=Double.parseDouble(numero1.getText());
+                numero2.setText(" - ");
+                double valorRad=Math.toRadians(valor);
+                double cos= Math.cos(valorRad);
+                double cosR= Math.round(cos*100.0)/100.0;
+                Respuesta.setText(cosR+"");
+            }
+        });
+
+        tanButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                double valor=Double.parseDouble(numero1.getText());
+                numero2.setText(" - ");
+                double valorRad=Math.toRadians(valor);
+                double tan= Math.tan(valorRad);
+                double tanR= Math.round(tan*100.0)/100.0;
+                Respuesta.setText(tanR+"");
+            }
+        });
     }
+
+
 }

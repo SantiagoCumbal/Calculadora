@@ -24,8 +24,8 @@ public class Calculadora {
         sumabutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double numero1V=Integer.parseInt(numero1.getText());
-                double numero2V=Integer.parseInt(numero2.getText());
+                double numero1V=Double.parseDouble(numero1.getText());
+                double numero2V=Double.parseDouble(numero2.getText());
                 double suma=numero1V+numero2V;
                 double sumaR = Math.round(suma * 100.0) / 100.0;
                 Respuesta.setText(sumaR+"");
@@ -34,8 +34,8 @@ public class Calculadora {
         restabutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double numero1V=Integer.parseInt(numero1.getText());
-                double numero2V=Integer.parseInt(numero2.getText());
+                double numero1V=Double.parseDouble(numero1.getText());
+                double numero2V=Double.parseDouble(numero2.getText());
                 double resta=numero1V-numero2V;
                 double restaR = Math.round(resta * 100.0) / 100.0;
                 Respuesta.setText(restaR+"");
@@ -44,8 +44,8 @@ public class Calculadora {
         multibutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double numero1V=Integer.parseInt(numero1.getText());
-                double numero2V=Integer.parseInt(numero2.getText());
+                double numero1V=Double.parseDouble(numero1.getText());
+                double numero2V=Double.parseDouble(numero2.getText());
                 double multi=numero1V*numero2V;
                 double multiR = Math.round(multi * 100.0) / 100.0;
                 Respuesta.setText(multiR+"");
@@ -55,8 +55,8 @@ public class Calculadora {
         divibutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double numero1V=Integer.parseInt(numero1.getText());
-                double numero2V=Integer.parseInt(numero2.getText());
+                double numero1V=Double.parseDouble(numero1.getText());
+                double numero2V=Double.parseDouble(numero2.getText());
                 if(numero2V==0){
                     Respuesta.setText("NO EXISTE DIVISION PARA 0");
                 } else{
@@ -69,8 +69,8 @@ public class Calculadora {
         raizButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int base=Integer.parseInt(numero1.getText());
-                int indice=Integer.parseInt(numero2.getText());
+                double base=Double.parseDouble(numero1.getText());
+                double indice=Double.parseDouble(numero2.getText());
                 double raiz=Math.pow(base,1.0/indice);
                 double raizR = Math.round(raiz * 100.0) / 100.0;
                 Respuesta.setText(raizR+"");
@@ -79,8 +79,8 @@ public class Calculadora {
         potenciaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int base=Integer.parseInt(numero1.getText());
-                int exponente=Integer.parseInt(numero2.getText());
+                double base=Double.parseDouble(numero1.getText());
+                double exponente=Double.parseDouble(numero2.getText());
                 double potencia=Math.pow(base,exponente);
                 double potenciaR = Math.round(potencia * 100.0) / 100.0;
                 Respuesta.setText(potenciaR+"");

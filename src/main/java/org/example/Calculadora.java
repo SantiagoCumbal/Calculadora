@@ -14,7 +14,7 @@ public class Calculadora {
     private JButton raizButton;
     private JButton potenciaButton;
     private JButton divibutton;
-    private JButton secButton;
+    private JButton senButton;
     private JButton cosButton;
     private JButton tanButton;
     private JLabel Respuesta;
@@ -94,15 +94,15 @@ public class Calculadora {
                 Respuesta.setText(null);
             }
         });
-        secButton.addActionListener(new ActionListener() {
+        senButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 double valor=Double.parseDouble(numero1.getText());
                 numero2.setText(" - ");
                 double valorRad=Math.toRadians(valor);
-                double sec= Math.sin(valorRad);
-                double secR= Math.round(sec*100.0)/100.0;
-                Respuesta.setText(secR+"");
+                double sen= Math.sin(valorRad);
+                double senR= Math.round(sen*100.0)/100.0;
+                Respuesta.setText(senR+"");
             }
         });
         cosButton.addActionListener(new ActionListener() {
